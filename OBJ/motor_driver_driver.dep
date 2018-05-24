@@ -1,5 +1,5 @@
 Dependencies for Project 'motor_driver', Target 'driver': (DO NOT MODIFY !)
-F (.\main.c)(0x5B0526B2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x5B0662C5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -71,7 +71,7 @@ I (..\LIB\ins\stm32f10x_tim.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_usart.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\LIB\ins\misc.h)(0x4D783BB4)
-F (.\stm32f10x_it.c)(0x5AEDB6A2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
+F (.\stm32f10x_it.c)(0x5B061306)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_it.o --omf_browse ..\obj\stm32f10x_it.crf --depend ..\obj\stm32f10x_it.d)
 I (stm32f10x_it.h)(0x4D99A59E)
 I (stm32f10x.h)(0x59CF6B3A)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -103,7 +103,10 @@ I (..\LIB\ins\stm32f10x_usart.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\LIB\ins\misc.h)(0x4D783BB4)
 I (YTCH_Driver.h)(0x58084349)
-F (.\YTCH_Driver.c)(0x5AEDAC62)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\ytch_driver.o --omf_browse ..\obj\ytch_driver.crf --depend ..\obj\ytch_driver.d)
+I (..\HARDWARE\seedparameter.h)(0x5B04C4FA)
+I (..\SYS\sys\sys.h)(0x550F951C)
+I (C:\software\ARM\ARMCC\include\string.h)(0x5475F300)
+F (.\YTCH_Driver.c)(0x5B065C36)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\ytch_driver.o --omf_browse ..\obj\ytch_driver.crf --depend ..\obj\ytch_driver.d)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -262,7 +265,7 @@ I (..\LIB\ins\misc.h)(0x4D783BB4)
 I (..\SYS\delay\delay.h)(0x555AC82C)
 I (..\SYS\usart\usart.h)(0x50517A82)
 I (C:\software\ARM\ARMCC\include\stdio.h)(0x5475F300)
-F (..\HARDWARE\timer2.c)(0x5AEDAB5C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\timer2.o --omf_browse ..\obj\timer2.crf --depend ..\obj\timer2.d)
+F (..\HARDWARE\timer2.c)(0x5B061D6F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\timer2.o --omf_browse ..\obj\timer2.crf --depend ..\obj\timer2.d)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
 I (..\CORE\core_cm3.h)(0x4D523B58)
 I (C:\software\ARM\ARMCC\include\stdint.h)(0x5475F300)
@@ -354,7 +357,7 @@ I (..\LIB\ins\stm32f10x_spi.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_tim.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\LIB\ins\misc.h)(0x4D783BB4)
-F (..\HARDWARE\usb_communication.c)(0x5B011533)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\usb_communication.o --omf_browse ..\obj\usb_communication.crf --depend ..\obj\usb_communication.d)
+F (..\HARDWARE\usb_communication.c)(0x5B060F97)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\usb_communication.o --omf_browse ..\obj\usb_communication.crf --depend ..\obj\usb_communication.d)
 I (..\HARDWARE\usb_communication.h)(0x5AFCE75E)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
@@ -451,7 +454,7 @@ I (..\LIB\ins\stm32f10x_tim.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_usart.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\LIB\ins\misc.h)(0x4D783BB4)
-F (.\usart3.c)(0x5AFD8E1C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\usart3.o --omf_browse ..\obj\usart3.crf --depend ..\obj\usart3.d)
+F (.\usart3.c)(0x5B062749)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\变量播种\变量播种主控制器代码（CH9343）\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\usart3.o --omf_browse ..\obj\usart3.crf --depend ..\obj\usart3.d)
 I (..\SYS\delay\delay.h)(0x555AC82C)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)

@@ -30,3 +30,6 @@
 ..\obj\stm32f10x_it.o: ..\LIB\ins\stm32f10x_wwdg.h
 ..\obj\stm32f10x_it.o: ..\LIB\ins\misc.h
 ..\obj\stm32f10x_it.o: YTCH_Driver.h
+..\obj\stm32f10x_it.o: ..\HARDWARE\seedparameter.h
+..\obj\stm32f10x_it.o: ..\SYS\sys\sys.h
+..\obj\stm32f10x_it.o: C:\software\ARM\ARMCC\Bin\..\include\string.h

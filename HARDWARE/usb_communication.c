@@ -17,6 +17,9 @@
 void DMA_Config(u16 dma_count,u32 add)
 {
 	DMA_InitTypeDef DMA_InitStructure;
+	NVIC_InitTypeDef NVIC_InitStructure;
+	
+	
 	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_DMA1,ENABLE);                        //开启DMA时钟
 	DMA_DeInit(DMA1_Channel5);																							 //将DMA1设为缺省值
 	DMA_InitStructure.DMA_PeripheralBaseAddr = USART1_DR_Base;							 //设置串口数据寄存器地址
@@ -32,7 +35,12 @@ void DMA_Config(u16 dma_count,u32 add)
 	DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;														 //禁止内存到内存的传输
 	DMA_Init(DMA1_Channel5, &DMA_InitStructure);														 //配置DMA1通道5
 	DMA_ITConfig(DMA1_Channel5,DMA_IT_TC,ENABLE);														 //配置DMA发送完成后产生中断
-
+	
+	NVIC_InitStructure.NVIC_IRQChannel = DMA1_Channel5_IRQn;
+	NVIC_InitStructure.NVIC_IRQChannelPreemptionPriority=1 ;//抢占优先级1
+	NVIC_InitStructure.NVIC_IRQChannelSubPriority = 3;		//子优先级3
+	NVIC_InitStructure.NVIC_IRQChannelCmd = ENABLE;			//IRQ通道使能
+	NVIC_Init(&NVIC_InitStructure);	//根据指定的参数初始化NVIC寄存器
 }
 
 

@@ -24,8 +24,13 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x_it.h"
 #include "YTCH_Driver.h"	
+#include "seedparameter.h"
+#include "string.h"
 
 extern volatile int  timer2_cnt;
+extern  void 	Ch_TX_Send2(u8 *p_buf,u16 Count);
+extern u8 buffer_read[16];
+extern seed_para sp;  //播种作业参数结构体变量
 
 /** @addtogroup STM32F10x_StdPeriph_Template
   * @{
@@ -153,6 +158,25 @@ void TIM2_IRQHandler(void)
   	timer2_cnt++;
 	}		 	
 }
+
+/**
+  * @brief  接收完成中断
+  * @param  None
+  * @retval : None
+  */
+
+void DMA1_Channel5_IRQHandler(void)
+{
+	if(SET==DMA_GetFlagStatus(DMA1_FLAG_TC5))	
+			 {		
+					DMA_ClearFlag(DMA1_FLAG_TC5);
+					
+					Ch_TX_Send2(&buffer_read[0],16);	 
+			 }			
+		Seed_Para_Analysis(&sp,(u8*)buffer_read);	//将各个参数解析出来放到sp结构体中	
+		memset((uint8_t *)&buffer_read ,0, sizeof(buffer_read));	//清空buffer_read缓冲器	 
+}
+	
 /******************************************************************************/
 /*                 STM32F10x Peripherals Interrupt Handlers                   */
 /*  Add here the Interrupt Handler for the used peripheral(s) (PPP), for the  */

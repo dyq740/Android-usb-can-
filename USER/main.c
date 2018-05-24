@@ -23,15 +23,15 @@ extern  void 	Ch_TX_Send2(u8 *p_buf,u16 Count);
 
 nmea_msg gpsx; //GPS信息存储结构体变量
 seed_para sp;  //播种作业参数结构体变量
+u8 buffer_read[16];
 int main(void)
 { 
-	u16 wmotor;
+	u16 wmotor=0;
 	u8 buffer_send[15];
-	u8 buffer_read[32];
 	u32 lati,longti;
 	u16 tractorspeed;
 	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2); //设置NVIC中断分组2:2位抢占优先级，2位响应优先级	
-	DMA_Config(32,(u32)&buffer_read[0]);
+	DMA_Config(16,(u32)&buffer_read[0]);
 	uart_init(9600);
 	DMA_Cmd(DMA1_Channel5, ENABLE);
 	USART_Cmd(USART1, ENABLE);
@@ -46,7 +46,7 @@ int main(void)
 //	NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);//设置系统中断优先级分组2
 //	delay_init();    //初始化延时函数
 	CAN2_Mode_Init(CAN_SJW_1tq,CAN_BS2_2tq,CAN_BS1_9tq,6,CAN_Mode_Normal);//CAN初始化普通模式,波特率500kbps    //CAN工作模式;0,普通模式;1,环回模式
-  TIM2_Init(9,7199);	//定时器2时钟84M，分频系数8400，84M/84=1M 所以计数1000次为0.1ms,用作回复超时检测
+  TIM2_Init(9,71);	//定时器2时钟72M，分频系数72，72M/72=1M 所以计数1000次为0.1ms,用作回复超时检测
 
 //	delay_ms(100);
 //	LED_Init();
@@ -67,13 +67,7 @@ int main(void)
 	while(1)
 	{	
 		
-		if(SET==DMA_GetFlagStatus(DMA1_FLAG_HT5))	
-			 {		
-					DMA_ClearFlag(DMA1_FLAG_HT5);
-					
-					Ch_TX_Send2(&buffer_read[0],32);	 
-			 }			
-		Seed_Para_Analysis(&sp,(u8*)buffer_read);			 			
+			
 		if(USART3_RX_STA&0X8000)												//接收到一次数据了
 		{
 				LED1=~LED1;																	//信号灯状态取反，示意捕捉到GPS报文信息
@@ -81,6 +75,7 @@ int main(void)
 				lati = gpsx.latitude;   										//得到纬度信息
 				longti = gpsx.longitude;										//得到经度信息
 				tractorspeed = gpsx.speed;									//得到拖拉机速度信息			
+				USART3_RX_STA=0;		   											//启动下一次接收		
 				
 				buffer_send[0]='$';													//语句标志符$
 				buffer_send[1]=transferH(lati);
@@ -102,11 +97,12 @@ int main(void)
 						
 				Ch_TX_Send1(&buffer_send[0],15);	
 				Ch_TX_Send2(&buffer_send[0],15);
-				USART3_RX_STA=0;		   	//启动下一次接收		
+				
 
 				wmotor=185.2*tractorspeed*sp.transferatio/(60*sp.holenumber*sp.seedspace);
 				PVM_Set_Speed(2,wmotor);
 				PVM_Set_Speed(1,wmotor);
+			
 				}
 				
 //			if(statusword & TARGET_REACHED_BIT) // 到达指定位置

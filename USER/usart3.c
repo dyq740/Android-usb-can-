@@ -53,7 +53,7 @@ void USART3_Init(u32 bound)
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOB, ENABLE);	// GPIOA时钟
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_USART3,ENABLE);
 
- 	USART_DeInit(USART3);  //复位串口2
+ 	USART_DeInit(USART3);  //复位串口3
 		 //USART2_TX   PA.2
   GPIO_InitStructure.GPIO_Pin = GPIO_Pin_10; //PA.2
   GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -72,7 +72,7 @@ void USART3_Init(u32 bound)
 	USART_InitStructure.USART_HardwareFlowControl = USART_HardwareFlowControl_None;//无硬件数据流控制
 	USART_InitStructure.USART_Mode = USART_Mode_Rx | USART_Mode_Tx;	//收发模式
   
-	USART_Init(USART3, &USART_InitStructure); //初始化串口	2
+	USART_Init(USART3, &USART_InitStructure); //初始化串口3
   
 //	USART_DMACmd(USART2,USART_DMAReq_Tx,ENABLE);  	//使能串口2的DMA发送
 //UART_DMA_Config(DMA1_Channel7,(u32)&USART2->DR,(u32)USART2_TX_BUF);//DMA1通道7,外设为串口2,存储器为USART2_TX_BUF 
