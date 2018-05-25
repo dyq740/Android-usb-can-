@@ -41,3 +41,4 @@
 ..\obj\main.o: C:\software\ARM\ARMCC\Bin\..\include\stdio.h
 ..\obj\main.o: ..\HARDWARE\usb_communication.h
 ..\obj\main.o: ..\HARDWARE\seedparameter.h
+..\obj\main.o: C:\software\ARM\ARMCC\Bin\..\include\string.h

@@ -567,10 +567,10 @@ ARM Macro Assembler    Page 9
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
 ork --depend=..\obj\startup_stm32f10x_cl.d -o..\obj\startup_stm32f10x_cl.o -IF:
-\变量播种\变量播种主控制器代码（CH9343）\USER\RTE -IC:\software\ARM\PACK\Keil\S
-TM32F1xx_DFP\1.0.5\Device\Include -IC:\software\ARM\CMSIS\Include --predefine="
-__UVISION_VERSION SETA 514" --predefine="STM32F10X_CL SETA 1" --list=..\obj\sta
-rtup_stm32f10x_cl.lst ..\CORE\startup_stm32f10x_cl.s
+\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE -IC:\software\ARM\PACK
+\Keil\STM32F1xx_DFP\1.0.5\Device\Include -IC:\software\ARM\CMSIS\Include --pred
+efine="__UVISION_VERSION SETA 514" --predefine="STM32F10X_CL SETA 1" --list=..\
+obj\startup_stm32f10x_cl.lst ..\CORE\startup_stm32f10x_cl.s
 
 
 

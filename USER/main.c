@@ -17,13 +17,17 @@
 #include "usart.h"
 #include "usb_communication.h"
 #include "seedparameter.h"
+#include "string.h"
 extern  void 	Ch_TX_Send1(u8 *p_buf,u16 Count);
 
 extern  void 	Ch_TX_Send2(u8 *p_buf,u16 Count);
 
+extern u8 flag;
+
 nmea_msg gpsx; //GPS信息存储结构体变量
 seed_para sp;  //播种作业参数结构体变量
 u8 buffer_read[16];
+u8 buffer_back[9];
 int main(void)
 { 
 	u16 wmotor=0;
@@ -77,34 +81,43 @@ int main(void)
 				tractorspeed = gpsx.speed;									//得到拖拉机速度信息			
 				USART3_RX_STA=0;		   											//启动下一次接收		
 				
-				buffer_send[0]='$';													//语句标志符$
-				buffer_send[1]=transferH(lati);
-				buffer_send[2]=transferM(lati);
-			  buffer_send[3]=transferL(lati);
-				buffer_send[4]=transferLL(lati);
-			
-				buffer_send[5]='*';													//语句标志符*
-				buffer_send[6]=transferH(longti);
-				buffer_send[7]=transferM(longti);
-			  buffer_send[8]=transferL(longti);
-				buffer_send[9]=transferLL(longti);
-			
-				buffer_send[10]='#';												//语句标志符#
-				buffer_send[11]=transferH(tractorspeed);
-				buffer_send[12]=transferM(tractorspeed);
-			  buffer_send[13]=transferL(tractorspeed);
-				buffer_send[14]=transferLL(tractorspeed);
-						
-				Ch_TX_Send1(&buffer_send[0],15);	
-				Ch_TX_Send2(&buffer_send[0],15);
+//				buffer_send[0]='$';													//语句标志符$
+//				buffer_send[1]=transferH(lati);
+//				buffer_send[2]=transferM(lati);
+//			  buffer_send[3]=transferL(lati);
+//				buffer_send[4]=transferLL(lati);
+//			
+//				buffer_send[5]='*';													//语句标志符*
+//				buffer_send[6]=transferH(longti);
+//				buffer_send[7]=transferM(longti);
+//			  buffer_send[8]=transferL(longti);
+//				buffer_send[9]=transferLL(longti);
+//			
+//				buffer_send[10]='#';												//语句标志符#
+//				buffer_send[11]=transferH(tractorspeed);
+//				buffer_send[12]=transferM(tractorspeed);
+//			  buffer_send[13]=transferL(tractorspeed);
+//				buffer_send[14]=transferLL(tractorspeed);
+//						
+//				Ch_TX_Send1(&buffer_send[0],15);	
+//				Ch_TX_Send2(&buffer_send[0],15);
 				
 
 				wmotor=185.2*tractorspeed*sp.transferatio/(60*sp.holenumber*sp.seedspace);
 				PVM_Set_Speed(2,wmotor);
 				PVM_Set_Speed(1,wmotor);
+		
 			
 				}
-				
+			if(flag==1){
+				flag=0;
+				Seed_Para_Tochar(sp,(u8*)buffer_back);
+				Ch_TX_Send2(&buffer_back[0],9);
+				memset((u8*)&buffer_back ,0, sizeof(buffer_back));	//清空buffer_read缓冲器	 
+			
+			
+			}
+					
 //			if(statusword & TARGET_REACHED_BIT) // 到达指定位置
 //			{
 //				Read_Position(1,&motor_position);

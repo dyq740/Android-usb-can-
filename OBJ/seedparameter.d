@@ -32,3 +32,4 @@
 ..\obj\seedparameter.o: ..\HARDWARE\seedparameter.h
 ..\obj\seedparameter.o: C:\software\ARM\ARMCC\Bin\..\include\math.h
 ..\obj\seedparameter.o: C:\software\ARM\ARMCC\Bin\..\include\string.h
+..\obj\seedparameter.o: C:\software\ARM\ARMCC\Bin\..\include\ctype.h

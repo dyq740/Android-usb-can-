@@ -176,50 +176,34 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>100</LineNumber>
+          <LineNumber>77</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134226032</Address>
+          <Address>134225850</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>F:\鍙橀噺鎾\鍙橀噺鎾涓绘帶鍒跺櫒浠ｇ爜锛圕H9343锛?USER\main.c</Filename>
+          <Filename>F:\鍩轰簬Android鍜宑an鎬荤嚎鐨勭帀绫崇簿閲忔挱绉嶆満\MCU绔唬鐮?USER\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\motor_driver\main.c\100</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>67</LineNumber>
+          <LineNumber>170</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134225824</Address>
+          <Address>134220132</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>F:\鍙橀噺鎾\鍙橀噺鎾涓绘帶鍒跺櫒浠ｇ爜锛圕H9343锛?USER\main.c</Filename>
+          <Filename>F:\鍩轰簬Android鍜宑an鎬荤嚎鐨勭帀绫崇簿閲忔挱绉嶆満\MCU绔唬鐮?USER\stm32f10x_it.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\motor_driver\main.c\67</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>67</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134226138</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>F:\鍙橀噺鎾\鍙橀噺鎾涓绘帶鍒跺櫒浠ｇ爜锛圕H9343锛?USER\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\motor_driver\main.c\67</Expression>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow2>
@@ -263,12 +247,17 @@
           <WinNumber>2</WinNumber>
           <ItemText>wmotor</ItemText>
         </Ww>
+        <Ww>
+          <count>8</count>
+          <WinNumber>2</WinNumber>
+          <ItemText>buffer_back</ItemText>
+        </Ww>
       </WatchWindow2>
       <MemoryWindow1>
         <Mm>
           <WinNumber>1</WinNumber>
           <SubType>0</SubType>
-          <ItemText>0x20000510</ItemText>
+          <ItemText>0x20000518</ItemText>
           <AccSizeX>0</AccSizeX>
         </Mm>
       </MemoryWindow1>

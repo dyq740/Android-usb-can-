@@ -17,6 +17,7 @@ __packed typedef struct
 } seed_para; 
 
 void Seed_Para_Analysis(seed_para *sp,u8 *buf);
+void Seed_Para_Tochar(seed_para para,u8 *buf);
 
 #endif
 

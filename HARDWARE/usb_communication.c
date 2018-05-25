@@ -30,7 +30,7 @@ void DMA_Config(u16 dma_count,u32 add)
 	DMA_InitStructure.DMA_MemoryInc = DMA_MemoryInc_Enable;									 //内存地址递增
 	DMA_InitStructure.DMA_PeripheralDataSize = DMA_PeripheralDataSize_Byte;  //外设数据单位
 	DMA_InitStructure.DMA_MemoryDataSize = DMA_MemoryDataSize_Byte;					 //内存数据单位
-	DMA_InitStructure.DMA_Mode = DMA_Mode_Circular;                          //工作循环模式
+	DMA_InitStructure.DMA_Mode=DMA_Mode_Circular;                              //工作循环模式
 	DMA_InitStructure.DMA_Priority = DMA_Priority_VeryHigh;									 //优先级设为最高
 	DMA_InitStructure.DMA_M2M = DMA_M2M_Disable;														 //禁止内存到内存的传输
 	DMA_Init(DMA1_Channel5, &DMA_InitStructure);														 //配置DMA1通道5
