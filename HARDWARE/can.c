@@ -2,6 +2,7 @@
 #include "delay.h"
 #include "usart.h"
 #include "stm32f10x.h"
+#include "YTCH_Driver.h"
 //////////////////////////////////////////////////////////////////////////////////	 
 //变量播种驱动器驱动程序
 //can驱动代码

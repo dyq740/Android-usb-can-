@@ -14,6 +14,7 @@ volatile int timer2_cnt;
 // SDO 读取数据回复
 volatile int sdo_recv_cnt = 0;
 CanRxMsg sdo_recv_msg;
+extern u16 meterspeed;
 
 
 	
@@ -138,7 +139,14 @@ void CAN_Master_Handler(CanRxMsg *msg)
     break;
     /* case TIME_STAMP: */
   case PDO1tx:
+		
+	meterspeed = msg->Data[3]<<8|msg->Data[2]&0xff;
+		break;
+		
+		
+		
   case PDO1rx:
+		
   case PDO2tx:
   case PDO2rx:
   case PDO3tx:
@@ -307,7 +315,6 @@ int8_t Write_Driver_Reg(uint8_t dev_addr,uint16_t index, uint8_t subindex ,uint8
   }
 	return TIME_OUT;
 }
-
 
 
 

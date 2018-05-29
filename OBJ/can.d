@@ -33,3 +33,4 @@
 ..\obj\can.o: ..\SYS\delay\delay.h
 ..\obj\can.o: ..\SYS\usart\usart.h
 ..\obj\can.o: C:\software\ARM\ARMCC\Bin\..\include\stdio.h
+..\obj\can.o: ..\USER\YTCH_Driver.h

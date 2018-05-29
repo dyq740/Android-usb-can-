@@ -51,3 +51,4 @@ int8_t Switch_Driver_Mode(uint8_t dev_addr,int8_t mode);
 int8_t PVM_Set_Speed(uint8_t dev_addr,int32_t speed);
 int8_t PPM_Set_Position(uint8_t dev_addr,int32_t position,uint8_t relative);
 int8_t Read_Position(uint8_t dev_addr,int32_t *position);
+void CAN_Master_Handler(CanRxMsg *msg);

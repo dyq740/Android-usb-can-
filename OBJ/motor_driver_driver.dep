@@ -1,5 +1,5 @@
 Dependencies for Project 'motor_driver', Target 'driver': (DO NOT MODIFY !)
-F (.\main.c)(0x5B07AFFF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
+F (.\main.c)(0x5B0D3FA0)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\main.o --omf_browse ..\obj\main.crf --depend ..\obj\main.d)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -33,7 +33,7 @@ I (..\SYS\delay\delay.h)(0x555AC82C)
 I (..\HARDWARE\can.h)(0x5AED259E)
 I (..\HARDWARE\timer2.h)(0x5806EE36)
 I (..\HARDWARE\led.h)(0x59C3BA56)
-I (YTCH_Driver.h)(0x58084349)
+I (YTCH_Driver.h)(0x5B0A77F5)
 I (..\HARDWARE\gps.h)(0x5AFD4761)
 I (usart3.h)(0x5AFD4B6E)
 I (transfer.h)(0x5AFD8E67)
@@ -103,11 +103,11 @@ I (..\LIB\ins\stm32f10x_tim.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_usart.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\LIB\ins\misc.h)(0x4D783BB4)
-I (YTCH_Driver.h)(0x58084349)
+I (YTCH_Driver.h)(0x5B0A77F5)
 I (..\HARDWARE\seedparameter.h)(0x5B0684D0)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (C:\software\ARM\ARMCC\include\string.h)(0x5475F300)
-F (.\YTCH_Driver.c)(0x5B065C36)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\ytch_driver.o --omf_browse ..\obj\ytch_driver.crf --depend ..\obj\ytch_driver.d)
+F (.\YTCH_Driver.c)(0x5B0A7260)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\ytch_driver.o --omf_browse ..\obj\ytch_driver.crf --depend ..\obj\ytch_driver.d)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
 I (..\CORE\core_cm3.h)(0x4D523B58)
@@ -138,7 +138,7 @@ I (..\LIB\ins\stm32f10x_usart.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\LIB\ins\misc.h)(0x4D783BB4)
 I (..\HARDWARE\timer2.h)(0x5806EE36)
-I (YTCH_Driver.h)(0x58084349)
+I (YTCH_Driver.h)(0x5B0A77F5)
 F (..\SYS\delay\delay.c)(0x555AC82C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\delay.o --omf_browse ..\obj\delay.crf --depend ..\obj\delay.d)
 I (..\SYS\delay\delay.h)(0x555AC82C)
 I (..\SYS\sys\sys.h)(0x550F951C)
@@ -232,7 +232,7 @@ I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
 I (..\LIB\ins\misc.h)(0x4D783BB4)
 I (..\SYS\usart\usart.h)(0x50517A82)
 I (C:\software\ARM\ARMCC\include\stdio.h)(0x5475F300)
-F (..\HARDWARE\can.c)(0x5AF8F85F)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\can.o --omf_browse ..\obj\can.crf --depend ..\obj\can.d)
+F (..\HARDWARE\can.c)(0x5B0B6CFF)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\can.o --omf_browse ..\obj\can.crf --depend ..\obj\can.d)
 I (..\HARDWARE\can.h)(0x5AED259E)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
@@ -266,6 +266,7 @@ I (..\LIB\ins\misc.h)(0x4D783BB4)
 I (..\SYS\delay\delay.h)(0x555AC82C)
 I (..\SYS\usart\usart.h)(0x50517A82)
 I (C:\software\ARM\ARMCC\include\stdio.h)(0x5475F300)
+I (..\USER\YTCH_Driver.h)(0x5B0A77F5)
 F (..\HARDWARE\seedparameter.c)(0x5B07ADDB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\seedparameter.o --omf_browse ..\obj\seedparameter.crf --depend ..\obj\seedparameter.d)
 I (..\SYS\sys\sys.h)(0x550F951C)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
@@ -550,7 +551,7 @@ I (..\LIB\ins\stm32f10x_spi.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_tim.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_usart.h)(0x4D783BB4)
 I (..\LIB\ins\stm32f10x_wwdg.h)(0x4D783BB4)
-F (..\LIB\src\stm32f10x_can.c)(0x4D783BB4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_can.o --omf_browse ..\obj\stm32f10x_can.crf --depend ..\obj\stm32f10x_can.d)
+F (..\LIB\src\stm32f10x_can.c)(0x5B0A7DE1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\CORE -I..\SYS\delay -I..\SYS\sys -I..\SYS\usart -I..\LIB\ins -I..\USER -I..\HARDWARE-I F:\基于Android和can总线的玉米精量播种机\MCU端代码\USER\RTE-I C:\software\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include-I C:\software\ARM\CMSIS\Include-D__UVISION_VERSION="514" -DSTM32F10X_CL -DSTM32F10X_CL -DUSE_STDPERIPH_DRIVER-o ..\obj\stm32f10x_can.o --omf_browse ..\obj\stm32f10x_can.crf --depend ..\obj\stm32f10x_can.d)
 I (..\LIB\ins\stm32f10x_can.h)(0x4D783BB4)
 I (..\USER\stm32f10x.h)(0x59CF6B3A)
 I (..\CORE\core_cm3.h)(0x4D523B58)
